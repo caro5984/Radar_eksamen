@@ -65,6 +65,7 @@ header .navbar ul li a {
     color: var(--Rød);
     display: block;
     font-weight: 600;
+    background-color: var(--Beige);
 }
 
 header .navbar ul li a:hover {
@@ -111,7 +112,8 @@ header label {
     }
     
     header label {
-        display: block;
+        display: flex;
+        float: right;
     }
 
     header .navbar{
@@ -147,5 +149,5 @@ header label {
 
 /* telefonstørrelse */
 @media (max-width: 480px){
-    
+
 }
