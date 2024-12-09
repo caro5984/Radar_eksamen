@@ -14,20 +14,23 @@
     box-sizing: border-box;
 }
 
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 50%;
+    height: auto;
+}
 
 body {
     font-family: Helvetica, sans-serif;
-    text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
     background: url('../images/forside.png');
     background-size: cover;
     background-position: center;
     background-color: var(--Beige);
-}
-
-img{
-    opacity: 0.2;
 }
 
 header {
@@ -41,12 +44,9 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    text-transform: uppercase;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-}
 
 header .navbar ul {
     list-style: none;
