@@ -188,7 +188,6 @@ main{
 .some{
     color: var(--Rød);
     display: flex;
-    padding: 2%;
     font-size: 5vh;
     justify-content: end;
 }
