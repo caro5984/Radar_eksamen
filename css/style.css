@@ -34,9 +34,6 @@ body {
     background-color: var(--Beige);
 }
 
-background img{
-    opacity: 20%;
-}
 
 header {
     position: fixed;
