@@ -1,0 +1,146 @@
+/*Farver*/
+:root{
+    --Rød: #D52B1E;
+    --Grøn: #012E07;
+    --Gul: #FF9900;
+    --Hvid: #FFFFFF;
+    --Beige: #ECECE5;
+    --Sort: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background: url('../images/forside.png');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--Beige);
+}
+
+img{
+    opacity: 0.2;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding: 10px 7%;
+    display: block;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: right;
+}
+
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: var(--Rød);
+    display: block;
+    font-weight: 600;
+}
+
+header .navbar ul li a:hover {
+    color: var(--Gul);
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 10vh;
+    color: var(--Rød);
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: var(--Beige);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+}
