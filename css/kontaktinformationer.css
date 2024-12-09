@@ -24,14 +24,27 @@
     justify-content: center;
 }
 
+
+/*Gennemsigtig baggrund*/
+/*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
 body {
     font-family: Helvetica, sans-serif;
     text-decoration: none;
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/forside.png');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     background-color: var(--Beige);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/forside.png') center / cover no-repeat;
+    opacity: 0.5; /* Juster gennemsigtigheden */
+    z-index: -1;
 }
 
 
@@ -129,6 +142,7 @@ h2{
     gap: 10%;
 }
 
+/*ChatGPT: "Kan man ved hjælp af css få et billede til at dreje rundt?" https://chatgpt.com/share/6756e84c-f544-8009-a8e4-9c41f9e76259*/
 .kort_billede{
     width: 30%;
     height: auto;
