@@ -141,30 +141,31 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    padding-top: 5%;
+    padding-top: 3%;
+    color: var(--Grøn);
 }
 
-/*ChatGPT: "Kan man ved hjælp af css få et billede til at dreje rundt?" https://chatgpt.com/share/6756e84c-f544-8009-a8e4-9c41f9e76259*/
+.info{
+    padding-right: 15%;
+}
+
+
 .billeder_container{
     justify-content: center;
     display: flex;
-    position: relative;
-    width: 500px;
+    position: absolute;
+    width: 800px;
     height: auto;
     right: 0%;
     overflow: hidden;
 }
 
+/*ChatGPT: "Kan man ved hjælp af css få et billede til at dreje rundt?" https://chatgpt.com/share/6756e84c-f544-8009-a8e4-9c41f9e76259*/
 .tekst{
+    position: absolute;
     width: 40%;
     height: auto;
-    animation: spin 10s linear infinite;
-}
-
-.kort{
-    width: 40%;
-    height: auto;
+    animation: spin 20s linear infinite;
 }
 
 @keyframes spin{
@@ -175,6 +176,12 @@ h2{
         transform: rotate(360deg);
       }
 }
+
+.kort{
+    width: 40%;
+    height: auto;
+}
+
 
 /*Tablet størrelse*/
 @media(max-width:991px){
@@ -241,57 +248,81 @@ h2{
 
     h1{
         font-size: 3vh;
-        padding-top: 40%;
+        padding-top: 30%;
     }
 
     h2{
         font-size: 2.5vh;
+        margin-top: -5%;
+        text-align: center;
     }
 
     .billeder{
     display: block;
     justify-self: center;
-    padding-top: 2%;
+    }
+
+    .billeder_container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0%;
+    overflow: hidden;
+    padding-top: 3%;
     }
 }
 
 /* telefonstørrelse */
 @media (max-width: 480px){
-.logo{
+    .logo{
     width: 50%;
     height: auto;
-    padding-top: 100px;
-}
+    padding-top: 30px;
+    }
 
-header label{
+    header label{
     display: flex;
     float: right;
     font-size: 5vh;
     margin-top: 10%;
     margin-left: -10%;
-}
+    }
 
-.some{
+    .some{
     color: var(--Rød);
     display: flex;
     padding: 2%;
     font-size: 2vh;
     justify-content: end;
-}
+    }
 
-.box{
+    .box{
     display: block;
-    padding-top: 20%;
-}
+    }
 
-h1{
-    font-size: larger;
-    padding-top: 70%;
-}
+    h1{
+    font-size: 3vh;
+    padding-top: 60%;
+    }
 
-h2{
-    font-size: medium;
-}
+    h2{
+    font-size: large;
+    padding-top: 5%;
+    }
+
+    .billeder_container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 3%;
+    }
 
 }
 
