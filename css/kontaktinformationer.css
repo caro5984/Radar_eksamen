@@ -185,6 +185,9 @@ h2{
     header label {
         display: flex;
         float: right;
+        font-size: 10vh;
+        color: var(--Rød);
+        cursor: pointer;
     }
 
     header .navbar{
