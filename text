@@ -1,0 +1,24 @@
+/*ChatGPT: "Kan jeg opdele min side i billeder ved brug af html og css?" https://chatgpt.com/share/67580d23-3af4-8009-bc27-cd1e41a37cb8*/
+.section {
+    height: 100vh; /* Fylder hele browserens højde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--Grøn);
+    background-size: cover; /* Sørger for, at billedet fylder hele sektionen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+}
+
+.section1 {
+    background-image: url(); /* URL til dit billede */
+}
+
+.section2 {
+    background-image: url();
+}
+
+.section3 {
+    background-image: url();
+}

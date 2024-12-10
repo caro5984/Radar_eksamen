@@ -20,9 +20,10 @@
 }
 
 .logo{
-    width: 40%;
+    width: 20%;
     height: auto;
     justify-content: center;
+    z-index: -1;
 }
 
 
@@ -121,29 +122,25 @@ header label {
     display: none;
 }
 
-/*ChatGPT: "Kan jeg opdele min side i billeder ved brug af html og css?" https://chatgpt.com/share/67580d23-3af4-8009-bc27-cd1e41a37cb8*/
-.section {
-    height: 100vh; /* Fylder hele browserens højde */
+.koncert{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 15%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.andreasodbjerg_billede{
+    width: 20%;
+    height: auto;
+}
+
+.tekst{
     color: var(--Grøn);
-    background-size: cover; /* Sørger for, at billedet fylder hele sektionen */
-    background-position: center; /* Centrerer billedet */
-    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
-}
-
-.section1 {
-    background-image: url(); /* URL til dit billede */
-}
-
-.section2 {
-    background-image: url();
-}
-
-.section3 {
-    background-image: url();
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    font-weight: 600;
 }
 
 /*Tablet størrelse*/
@@ -192,8 +189,32 @@ header label {
     }
 
     .logo{
+        width: 30%;
+        height: auto;
+    }
+
+    .koncert{
+        display: block;
+        text-align: center;
+    }
+    
+    .andreasodbjerg_billede{
         width: 40%;
         height: auto;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    h1{
+        text-align: center;
+    }
+    
+    .tekst1{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
     }
 
     .some{
