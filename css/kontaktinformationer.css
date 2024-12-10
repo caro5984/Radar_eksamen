@@ -43,7 +43,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('../images/forside.png') center / cover no-repeat;
-    opacity: 0.5; /* Juster gennemsigtigheden */
+    opacity: 0.2; /* Juster gennemsigtigheden */
     z-index: -1;
 }
 
@@ -123,7 +123,7 @@ header label {
 h1{
     display: flex;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 15%;
     color: var(--Grøn);
     text-transform: uppercase;
     text-decoration: underline;
@@ -140,13 +140,30 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 10%;
+    padding-top: 5%;
 }
 
 /*ChatGPT: "Kan man ved hjælp af css få et billede til at dreje rundt?" https://chatgpt.com/share/6756e84c-f544-8009-a8e4-9c41f9e76259*/
-.kort_billede{
-    width: 30%;
+.billeder{
+    justify-content: center;
+    display: flex;
+    
+    position: relative;
+    width: 500px;
+    height: auto;
+    right: 0%;
+    overflow: hidden;
+}
+
+.tekst{
+    width: 40%;
     height: auto;
     animation: spin 10s linear infinite;
+}
+
+.kort{
+    width: 40%;
+    height: auto;
 }
 
 @keyframes spin{
@@ -201,7 +218,7 @@ h2{
     }
 
     .logo{
-        width: 90%;
+        width: 40%;
         height: auto;
     }
 
@@ -212,23 +229,58 @@ h2{
         font-size: 4vh;
         justify-content: end;
     }
+
+    .box{
+        display: block;
+        padding-top: 10%;
+    }
+
+    h1{
+        font-size: 3vh;
+        padding-top: 40%;
+    }
+
+    h2{
+        font-size: 2.5vh;
+    }
+
+    .billeder{
+    display: block;
+    justify-self: center;
+    padding-top: 2%;
+    }
 }
 
 /* telefonstørrelse */
 @media (max-width: 480px){
 .logo{
-    width: 85%;
+    width: 50%;
     height: auto;
-    padding-top: 40%;
+    padding-top: 100px;
 }
 
 .some{
     color: var(--Rød);
     display: flex;
     padding: 2%;
-    font-size: 3vh;
+    font-size: 2vh;
     justify-content: end;
 }
+
+.box{
+    display: block;
+    padding-top: 20%;
+}
+
+h1{
+    font-size: larger;
+    padding-top: 70%;
+}
+
+h2{
+    font-size: medium;
+}
+
 }
 
 /*Sørger for at footeren bliver i fotteren*/
