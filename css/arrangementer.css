@@ -121,6 +121,31 @@ header label {
     display: none;
 }
 
+
+.section {
+    height: 100vh; /* Fylder hele browserens højde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    background-size: cover; /* Sørger for, at billedet fylder hele sektionen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+}
+
+.section1 {
+    background-image: url('billede1.jpg'); /* URL til dit billede */
+}
+
+.section2 {
+    background-image: url('billede2.jpg');
+}
+
+.section3 {
+    background-image: url('billede3.jpg');
+}
+
 /*Tablet størrelse*/
 @media(max-width:991px){
 
@@ -178,4 +203,17 @@ header label {
         font-size: 4vh;
         justify-content: end;
     }
+}
+
+/*Sørger for at footeren bliver i fotteren*/
+main{
+    min-height: 90vh;
+}
+
+.some{
+    color: var(--Rød);
+    display: flex;
+    padding: 2%;
+    font-size: 5vh;
+    justify-content: end;
 }
