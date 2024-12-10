@@ -18,12 +18,13 @@
     display: flex;
     justify-content: space-between;
 }
+
 .logo{
-    width: 60%;
+    width: 40%;
     height: auto;
-    margin-top: 10%;
     justify-content: center;
 }
+
 
 /*Gennemsigtig baggrund*/
 /*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
@@ -130,6 +131,9 @@ header label {
     header label {
         display: flex;
         float: right;
+        font-size: 10vh;
+        color: var(--Rød);
+        cursor: pointer;
     }
 
     header .navbar{
@@ -163,7 +167,7 @@ header label {
     }
 
     .logo{
-        width: 90%;
+        width: 40%;
         height: auto;
     }
 
@@ -172,70 +176,6 @@ header label {
         display: flex;
         padding: 2%;
         font-size: 4vh;
-        justify-content: end;
-    }
-}
-
-/* telefonstørrelse */
-@media (max-width: 480px){
-.logo{
-    width: 100%;
-    height: auto;
-    padding-top: 30px;
-}
-
-header label {
-    display: flex;
-    float: right;
-    font-size: 5vh;
-    margin-top: -2%;
-    margin-left: -10%;
-}
-
-.some{
-    color: var(--Rød);
-    display: flex;
-    padding: 2%;
-    font-size: 3vh;
-    justify-content: end;
-}
-
-}
-
-/*Sørger for at footeren bliver i fotteren*/
-main{
-    min-height: 95vh;
-}
-
-.some{
-    color: var(--Rød);
-    display: flex;
-    font-size: 5vh;
-    justify-content: flex-end;
-    padding-bottom: 2%;
-}
-
-/* telefonstørrelse */
-@media (max-width: 480px){
-    .logo{
-        width: 50%;
-        height: auto;
-        padding-top: 100px;
-    }
-    
-    header label{
-        display: flex;
-        float: right;
-        font-size: 5vh;
-        margin-top: -10%;
-        margin-left: -10%;
-    }
-    
-    .some{
-        color: var(--Rød);
-        display: flex;
-        padding: 2%;
-        font-size: 2vh;
         justify-content: end;
     }
 }
