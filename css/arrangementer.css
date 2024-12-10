@@ -193,6 +193,72 @@ h1{
     font-weight: 600;
 }
 
+.koncert4{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.andreasodbjerg_billede{
+    width: 20%;
+    height: auto;
+}
+
+.tekst4{
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+}
+
+.koncert5{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.blaamand_billede{
+    width: 20%;
+    height: auto;
+}
+
+.tekst5{
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+}
+
+.koncert6{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.blaest_billede{
+    width: 20%;
+    height: auto;
+}
+
+.tekst6{
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+}
+
 /*Tablet størrelse*/
 @media(max-width:991px){
 
@@ -300,6 +366,66 @@ h1{
     }
     
     .tekst3{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    .koncert4{
+        display: block;
+        text-align: center;
+    }
+    
+    .andreasodbjerg_billede{
+        width: 40%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .tekst4{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    .koncert5{
+        display: block;
+        text-align: center;
+    }
+    
+    .blaamand_billede{
+        width: 40%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .tekst5{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    .koncert6{
+        display: block;
+        text-align: center;
+    }
+    
+    .blaest_billede{
+        width: 40%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .tekst6{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
         font-weight: 600;
