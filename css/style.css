@@ -217,7 +217,7 @@ main{
 /* telefonstørrelse */
 @media (max-width: 480px){
     .logo{
-        width: 50%;
+        width: 100%;
         height: auto;
         padding-top: 100px;
     }
@@ -226,7 +226,7 @@ main{
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: -10%;
+        margin-top: 10%;
         margin-left: -10%;
     }
     
@@ -234,7 +234,7 @@ main{
         color: var(--Rød);
         display: flex;
         padding: 2%;
-        font-size: 2vh;
+        font-size: 4vh;
         justify-content: end;
     }
 }

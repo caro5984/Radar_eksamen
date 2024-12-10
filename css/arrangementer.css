@@ -45,7 +45,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('../images/forside.png') center / cover no-repeat;
-    opacity: 0.2; /* Juster gennemsigtigheden */
+    opacity: 0.1; /* Juster gennemsigtigheden */
     z-index: -1;
 }
 
@@ -122,7 +122,7 @@ header label {
     display: none;
 }
 
-.koncert{
+.koncert1{
     display: flex;
     justify-content: space-around;
     text-align: left;
@@ -131,15 +131,65 @@ header label {
     z-index: 1000;
 }
 
-.andreasodbjerg_billede{
+.fakenameband_billede{
     width: 20%;
     height: auto;
 }
 
-.tekst{
+.tekst1{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
     padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.koncert2{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.sceneband{
+    width: 20%;
+    height: auto;
+}
+
+.tekst2{
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;  
+}
+
+.koncert3{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    z-index: 1000;
+}
+
+.tremandband{
+    width: 20%;
+    height: auto;
+}
+
+.tekst3{
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
     font-weight: 600;
 }
 
@@ -193,23 +243,63 @@ header label {
         height: auto;
     }
 
-    .koncert{
+    h1{
+        text-align: center;
+    }
+
+    .koncert1{
         display: block;
         text-align: center;
     }
     
-    .andreasodbjerg_billede{
+    .fakenameband_billede{
         width: 40%;
         height: auto;
         align-items: center;
-        margin-bottom: 10%;
-    }
-
-    h1{
-        text-align: center;
+        margin-bottom: 5%;
     }
     
     .tekst1{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    .koncert2{
+        display: block;
+        text-align: center;
+    }
+    
+    .sceneband{
+        width: 40%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .tekst2{
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding-right: 10%;
+    }
+
+    .koncert3{
+        display: block;
+        text-align: center;
+    }
+    
+    .tremandband{
+        width: 40%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    
+    .tekst3{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
         font-weight: 600;
@@ -223,6 +313,17 @@ header label {
         padding: 2%;
         font-size: 4vh;
         justify-content: end;
+    }
+}
+
+/* telefonstørrelse */
+@media (max-width: 480px){
+    header label{
+        display: flex;
+        float: right;
+        font-size: 5vh;
+        margin-top: 10%;
+        margin-left: -10%;
     }
 }
 
