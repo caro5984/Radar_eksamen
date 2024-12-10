@@ -19,8 +19,9 @@
     justify-content: space-between;
 }
 .logo{
-    width: 50%;
+    width: 60%;
     height: auto;
+    margin-top: 10%;
     justify-content: center;
 }
 
@@ -187,7 +188,7 @@ header label {
     display: flex;
     float: right;
     font-size: 5vh;
-    margin-top: -10%;
+    margin-top: -2%;
     margin-left: -10%;
 }
 
