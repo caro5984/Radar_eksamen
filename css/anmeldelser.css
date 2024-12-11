@@ -137,18 +137,125 @@ p{
     position: relative;
     text-align: center;
     color: var(--Grøn);
+    width: 100%;
+    height: auto;
 }
 
 .billede1{
     width: 100%;
     height: auto;
     padding-top: 10%;
-    opacity: 0.25;
+    opacity: 0.4;
 }
 
 .tekst1{
     position: absolute;
     top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
+}
+
+.section2 {
+    position: relative;
+    text-align: center;
+    color: var(--Grøn);
+    width: 100%;
+    height: auto;
+}
+
+.billede2{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.tekst2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
+}
+
+.section3 {
+    position: relative;
+    text-align: center;
+    color: var(--Grøn);
+    width: 100%;
+    height: auto;
+}
+
+.billede3{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.tekst3{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
+}
+
+.section4 {
+    position: relative;
+    text-align: center;
+    color: var(--Grøn);
+    width: 100%;
+    height: auto;
+}
+
+.billede4{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.tekst4{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
+}
+
+.section5{
+    position: relative;
+    text-align: center;
+    color: var(--Grøn);
+    width: 100%;
+    height: auto;
+}
+
+.billede5{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.tekst5{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
+}
+
+.section6 {
+    position: relative;
+    text-align: center;
+    color: var(--Grøn);
+    width: 100%;
+    height: auto;
+}
+
+.billede6{
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.tekst6{
+    position: absolute;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); /* Justerer for centreringsforskydning */
 }
@@ -210,9 +317,9 @@ p{
     }
     
     p{
-        font-size: 1vh;
+        font-size: 1.5vh;
         font-weight: 400;
-        padding-top: 5%;
+        padding-top: 2%;
     }
 
     .billede1{
@@ -221,7 +328,57 @@ p{
     padding-top: 30%;
     }
 
+    .tekst1{
+    padding-top: 20%;
+    width: 80%;
+    }
+
+    .billede2{
+    width: 100%;
+    height: auto;
+    }
+    
+    .tekst2{
+    width: 80%;
+    }
+
+    .billede3{
+    width: 100%;
+    height: auto;
+    }
+        
+    .tekst3{
+    width: 80%;
+    }
+
+    .billede4{
+    width: 100%;
+    height: auto;
+    }
+            
+    .tekst4{
+    width: 80%;
+    }
+
+    .billede5{
+    width: 100%;
+    height: auto;
+    }
+            
+    .tekst5{
+    width: 80%;
+    }
+
+    .billede6{
+    width: 100%;
+    height: auto;
+    }
+            
+    .tekst6{
+    width: 80%;
+    }
 }
+
 
 
 /* telefonstørrelse */
@@ -232,6 +389,80 @@ p{
         font-size: 5vh;
         margin-top: 10%;
         margin-left: -10%;
+    }
+
+    h1{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2vh;
+        padding-top: 5%;
+    }
+    
+    p{
+        font-size: 1.5vh;
+        font-weight: 400;
+        padding-top: 1%;
+    }
+
+    .billede1{
+        width: 100%;
+        height: 400px;
+        padding-top: 30%;
+        }
+    
+    .tekst1{
+        padding-top: 20%;
+        width: 80%;
+    }
+
+    .billede2{
+        width: 100%;
+        height: 200px;
+        }
+    
+    .tekst2{
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .billede3{
+    width: 100%;
+    height: 200px;
+    }
+    
+    .tekst3{
+    width: 80%;
+    padding-top: 5%;
+    }
+
+    .billede4{
+    width: 100%;
+    height: 200px;
+    }
+        
+    .tekst4{
+    width: 80%;
+    padding-top: 20%;
+    }
+
+    .billede5{
+    width: 100%;
+    height: 200px;
+    }
+            
+    .tekst5{
+    width: 80%;
+    padding-top: 5%;
+    }
+
+    .billede6{
+    width: 100%;
+    height: 200px;
+    }
+            
+    .tekst6{
+    width: 80%;
+    padding-top: 5%;
     }
 }
 
