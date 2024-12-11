@@ -212,28 +212,3 @@ main{
     justify-content: flex-end;
     padding-bottom: 2%;
 }
-
-/* telefonstørrelse */
-@media (max-width: 480px){
-    .logo{
-        width: 100%;
-        height: auto;
-        padding-top: 100px;
-    }
-    
-    header label{
-        display: flex;
-        float: right;
-        font-size: 5vh;
-        margin-top: 10%;
-        margin-left: -10%;
-    }
-    
-    .some{
-        color: var(--Rød);
-        display: flex;
-        padding: 2%;
-        font-size: 4vh;
-        justify-content: end;
-    }
-}

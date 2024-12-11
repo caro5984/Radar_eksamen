@@ -1,0 +1,213 @@
+/*Farver*/
+:root{
+    --Rød: #D52B1E;
+    --Grøn: #012E07;
+    --Gul: #FF9900;
+    --Hvid: #FFFFFF;
+    --Beige: #ECECE5;
+    --Sort: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+/*Gennemsigtig baggrund*/
+/*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
+body {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--Beige);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/forside.png') center / cover no-repeat;
+    opacity: 0.1; /* Juster gennemsigtigheden */
+    z-index: -1;
+}
+
+
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding: 10px 7%;
+    display: block;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+
+header .navbar ul {
+    list-style: none;
+    display: block;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: right;
+}
+
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: var(--Rød);
+    display: block;
+    font-weight: 600;
+    background-color: var(--Beige);
+}
+
+header .navbar ul li a:hover {
+    color: var(--Gul);
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 10vh;
+    color: var(--Rød);
+    cursor: pointer;
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mand_med_trumpet{
+    width: 100%;
+    height: auto;
+}
+
+.synge_mand{
+    width: 100%;
+    height: auto;
+}
+
+/*Tablet størrelse*/
+@media(max-width:991px){
+
+    header {
+        padding: 20px;
+    }
+    
+    header label {
+        display: flex;
+        float: right;
+        font-size: 10vh;
+        color: var(--Rød);
+        cursor: pointer;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right:0;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: var(--Beige);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left:0;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+
+    .logo{
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* telefonstørrelse */
+@media (max-width: 480px){
+    header label{
+        display: flex;
+        float: right;
+        font-size: 5vh;
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+}
+
+/*Sørger for at footeren bliver i fotteren*/
+main{
+    min-height: 90vh;
+}
+
+.some{
+    color: var(--Rød);
+    display: flex;
+    padding: 2%;
+    font-size: 5vh;
+    justify-content: end;
+}
