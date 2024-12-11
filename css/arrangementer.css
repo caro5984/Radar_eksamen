@@ -124,24 +124,25 @@ header label {
 
 .koncert1{
     display: flex;
-    justify-content: space-around;
-    text-align: left;
+    justify-content: space-between;
     margin-top: 15%;
     margin-left: 10%;
-    z-index: 1000;
+    
 }
 
-.fakenameband_billede{
+.allen{
     width: 20%;
-    height: auto;
+    height: 10%;
+    text-align: center;
 }
 
 .tekst1{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 600;
+    width: 70%;
+    text-align: center;
 }
 
 h1{
@@ -157,20 +158,19 @@ h1{
     text-align: left;
     margin-top: 5%;
     margin-left: 10%;
-    z-index: 1000;
 }
 
-.sceneband{
+.gorgeous{
     width: 20%;
-    height: auto;
+    height: 10%;
 }
 
 .tekst2{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-weight: 600;  
+    padding-right: 5%;
+    font-weight: 600;
+    width: 70%; 
 }
 
 .koncert3{
@@ -182,17 +182,17 @@ h1{
     z-index: 1000;
 }
 
-.tremandband{
+.anna{
     width: 20%;
-    height: auto;
+    height: 10%;
 }
 
 .tekst3{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 600;
+    width: 70%;
 }
 
 .koncert4{
@@ -206,15 +206,15 @@ h1{
 
 .andreasodbjerg_billede{
     width: 20%;
-    height: auto;
+    height: 10%;
 }
 
 .tekst4{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 600;
+    width: 70%;
 }
 
 .koncert5{
@@ -226,17 +226,17 @@ h1{
     z-index: 1000;
 }
 
-.blaamand_billede{
+.ungskab{
     width: 20%;
-    height: auto;
+    height: 10%;
 }
 
 .tekst5{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 600;
+    width: 70%;
 }
 
 .koncert6{
@@ -250,15 +250,15 @@ h1{
 
 .blaest_billede{
     width: 20%;
-    height: auto;
+    height: 10%;
 }
 
 .tekst6{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 5%;
     font-weight: 600;
+    width: 70%;
 }
 
 /*Tablet størrelse*/
