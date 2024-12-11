@@ -123,23 +123,77 @@ header label {
 }
 
 .container{
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 
+.container_1{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.container_2{
+  display: flex; 
+  justify-content: space-around; 
+  width: 100%;
+  align-items: center;
+}
+
+.container_3{
+    display: block;
+    padding: 2%;
+    width: 50%;
+}
+
+.artikel1{
+    padding: 2%;
+}
+
+.artikel2{
+padding: 2%;
+}
+
+.artikel3{
+    padding: 2%;
+}
+
+.artikel4{
+    padding: 2%;
+}
+
+h1{
+    color:var(--Grøn);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--Rød);
+    font-size: 4vh;
+    font-weight: 700;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-family: Helvetica, sans-serif;
+    color: var(--Grøn);
+    font-weight: 550;
+}
+
+
 .mand_med_trumpet{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 50%;
 }
 
 .synge_mand{
-    width: 100%;
+    width: 50%;
     height: auto;
+    padding-left: 20%;
 }
 
 /*Tablet størrelse*/
 @media(max-width:991px){
-
     header {
         padding: 20px;
     }

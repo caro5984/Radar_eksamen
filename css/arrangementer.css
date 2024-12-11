@@ -147,6 +147,8 @@ header label {
 h1{
     text-transform: uppercase;
     font-weight: 700;
+    color: var(--Grøn);
+    font-family: Helvetica, sans-serif;
 }
 
 .koncert2{
