@@ -8,24 +8,29 @@
     --Sort: #000000;
 }
 
+/*Styling af body*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Navigationsbar*/
+/*Det var ikke mulig for mig at en lodret menubar, uden af undermenerne lagde sig under hinanden, derfor lavede jeg i stedet dropdown 
+menuer, til hvert enkelt menupunkt. På dem måde ville jeg komme tætteste på mine mockups, samt gøre det tydeligt hvad der ligger under
+de forskellige menupunkter */
 .navcontainer{
     display: flex;
     justify-content: space-between;
 }
 
+/*Størrelse på logo*/
 .logo{
     width: 40%;
     height: auto;
     justify-content: center;
     z-index: -1;
 }
-
 
 /*Gennemsigtig baggrund*/
 /*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
@@ -49,7 +54,7 @@ body::before {
     z-index: -1;
 }
 
-
+/*Generelt styling af header*/
 header {
     position: fixed;
     top:0;
@@ -64,10 +69,12 @@ header {
     text-transform: uppercase;
 }
 
+/*Burgermenu label, der ikke vises ved større skærme*/
 #menu-bar {
     display: none;
 }
 
+/*Styling burgermenu label*/
 header label {
     font-size: 10vh;
     color: var(--Rød);
@@ -75,12 +82,13 @@ header label {
     display: none;
 }
 
-
+/*Flex column, så undermenuerne lægger sig under hinanden*/
 .container{
     display: flex;
     flex-direction: column;
 }
 
+/*Styling af undermenuer*/
 .dropbtn {
     background-color: var(--Beige);
     color: var(--Rød);
@@ -93,12 +101,14 @@ header label {
     cursor: pointer;
   }
   
+/*placering*/
   .dropdown {
     position: relative;
     display: inline-block;
     text-align: right;
   }
   
+/*Styling af undermenupunkter*/
   .dropdown-content {
     display: none;
     position: absolute;
@@ -109,6 +119,7 @@ header label {
     z-index: 1;
   }
   
+/*Styling af undermenupunkter*/
   .dropdown-content a {
     color: var(--Rød);
     padding: 12px 16px;
@@ -120,39 +131,36 @@ header label {
     display: block;
   }
   
+/*Gør teksten gul ved hover*/
   .dropdown-content a:hover {
     color: var(--Gul);
 }
   
+/*Blocker ved hover*/
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
+/*Gør teksten gul ved hover*/
   .dropdown:hover .dropbtn {
     color: var(--Gul);
   }
 
-  #menu-bar {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
+/*Teksten blocker og står under hinanden*/
 .indhold_container{
     display: block;
     justify-content: space-between;
     padding-top: 5%;
 }
 
+/*Billede og tekst flexer og ligger ved siden af hinanden*/
 .container_1{
     display: flex;
     justify-content: space-around;
     width: 70%;
 }
 
+/*Billede og tekst flexer og ligger ved siden af hinanden*/
 .container_2{
   display: flex;
   justify-content: space-around;
@@ -160,12 +168,14 @@ header label {
   padding-left: 20%;
 }
 
+/*Billede og tekst flexer og ligger ved siden af hinanden*/
 .container_3{
     display: flex;
     padding: 2%;
     width: 50%;
 }
 
+/*Plads på hver side af tekststykke*/
 .artikel1{
     padding: 2%;
 }
@@ -182,6 +192,7 @@ padding: 2%;
     padding: 2%;
 }
 
+/*Styling af overskrifter*/
 h1{
     color:var(--Grøn);
     text-transform: uppercase;
@@ -194,13 +205,14 @@ h1{
     justify-content: center;
 }
 
+/*Styling af tekst*/
 p{
     font-family: Helvetica, sans-serif;
     color: var(--Grøn);
     font-weight: 550;
 }
 
-
+/*Styling af billeder*/
 .mand_med_trumpet{
     width: auto;
     height: 50%;
@@ -219,6 +231,7 @@ p{
         padding: 20px;
     }
 
+/*Viser label i stedet for menupunkter ved mindre skærme*/
     header label {
         display: flex;
         float: right;
@@ -226,11 +239,8 @@ p{
         margin-top: 2%;
         margin-right: 10%;
     }
-    
-    .menu-icon {
-        display: block;
-    }
-
+ 
+    /*Styling af menuer under label*/
     .container {
         display: none;
         flex-direction: column;
@@ -249,12 +259,14 @@ p{
     #menu-bar:checked ~ .container {
         display: flex;
     }
-
+    
+/*En smule mindre logo*/
     .logo{
         width: 30%;
         height: auto;
     }
 
+/*Størrelse på billeder*/
     .synge_mand{
     width: auto;
     height: 100%;
@@ -266,6 +278,7 @@ p{
         gap: 5%;
     }
 
+    /*Teksten og billede står under hinanden*/
     .container_1{
         display: block;
         justify-content: center;
@@ -273,12 +286,14 @@ p{
         padding-left: 20%;
     }
 
+/*Teksten står under hinanden men ved siden af billede*/
     .container_2{
         display: flex;
         width: 100%;
         padding-right: 10%;
     }
 
+    /*Tekst og billede står under hinanden*/
     .container_3{
         display: block;
         width: 100%;
@@ -296,11 +311,13 @@ p{
         margin-left: -10%;
     }
 
+    /*Styling af overskriffter*/
     h1{
         padding-top: 25%;
         text-align: center;
     }
 
+    /*Alt tekst og alle billede står under hinanden*/
     .container_2{
         display: block;
     }
@@ -311,6 +328,7 @@ main{
     min-height: 90vh;
 }
 
+/*Styling af footer med sociale mediekanaler*/
 .some{
     display: flex;
     justify-content: right;
@@ -321,6 +339,7 @@ main{
     align-items: center;
     }
     
+/*Styling af sociale medie ikoner*/
     a img{
         width: 50px;
         height: auto;

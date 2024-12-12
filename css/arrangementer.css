@@ -8,17 +8,23 @@
     --Sort: #000000;
 }
 
+/*Styling af body*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Navigationsbar*/
+/*Det var ikke mulig for mig at en lodret menubar, uden af undermenerne lagde sig under hinanden, derfor lavede jeg i stedet dropdown 
+menuer, til hvert enkelt menupunkt. På dem måde ville jeg komme tætteste på mine mockups, samt gøre det tydeligt hvad der ligger under
+de forskellige menupunkter */
 .navcontainer{
     display: flex;
     justify-content: space-between;
 }
 
+/*Størrelse på logo*/
 .logo{
     width: 30%;
     height: auto;
@@ -49,7 +55,7 @@ body::before {
     z-index: -1;
 }
 
-
+/*Generelt styling af header*/
 header {
     position: fixed;
     top:0;
@@ -64,10 +70,12 @@ header {
     text-transform: uppercase;
 }
 
+/*Burgermenu label, der ikke vises ved større skærme*/
     #menu-bar {
         display: none;
     }
     
+/*Styling burgermenu label*/
     header label {
         font-size: 10vh;
         color: var(--Rød);
@@ -75,12 +83,13 @@ header {
         display: none;
     }
     
-    
+/*Flex column, så undermenuerne lægger sig under hinanden*/
     .container{
         display: flex;
         flex-direction: column;
     }
     
+/*Styling af undermenuer*/
     .dropbtn {
         background-color: var(--Beige);
         color: var(--Rød);
@@ -93,12 +102,14 @@ header {
         cursor: pointer;
       }
       
+/*placering*/
       .dropdown {
         position: relative;
         display: inline-block;
         text-align: right;
       }
       
+/*Styling af undermenupunkter*/
       .dropdown-content {
         display: none;
         position: absolute;
@@ -108,7 +119,8 @@ header {
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
-      
+
+/*Styling af undermenupunkter*/
       .dropdown-content a {
         color: var(--Rød);
         padding: 12px 16px;
@@ -120,27 +132,22 @@ header {
         display: block;
       }
       
+/*Gør teksten gul ved hover*/
       .dropdown-content a:hover {
         color: var(--Gul);
     }
       
+/*Blocker ved hover*/
       .dropdown:hover .dropdown-content {
         display: block;
       }
       
+/*Gør teksten gul ved hover*/
       .dropdown:hover .dropbtn {
         color: var(--Gul);
       }
-    
-      #menu-bar {
-        display: none;
-    }
-    
-    .menu-icon {
-        display: none;
-        cursor: pointer;
-    }
 
+/*Styling af overskrifter*/
     h1{
         text-transform: uppercase;
         font-weight: 700;
@@ -148,12 +155,14 @@ header {
         font-family: Helvetica, sans-serif;
     }
 
+/*Styling af teststykke*/
     p{
         font-weight: 600;
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
     }
 
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert1{
     display: flex;
     justify-content: space-between;
@@ -162,11 +171,13 @@ header {
     
 }
 
+/*Styling af billede*/
 .allen{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst1{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -175,7 +186,7 @@ header {
     width: 70%;
 }
 
-
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert2{
     display: flex;
     justify-content: space-around;
@@ -184,11 +195,13 @@ header {
     margin-left: 10%;
 }
 
+/*Styling af billede*/
 .gorgeous{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst2{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -197,6 +210,7 @@ header {
     width: 70%; 
 }
 
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert3{
     display: flex;
     justify-content: space-around;
@@ -206,11 +220,13 @@ header {
     z-index: 1000;
 }
 
+/*Styling af billede*/
 .anna{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst3{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -219,6 +235,7 @@ header {
     width: 70%;
 }
 
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert4{
     display: flex;
     justify-content: space-around;
@@ -228,11 +245,13 @@ header {
     z-index: 1000;
 }
 
+/*Styling af billede*/
 .andreasodbjerg_billede{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst4{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -241,6 +260,7 @@ header {
     width: 70%;
 }
 
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert5{
     display: flex;
     justify-content: space-around;
@@ -250,11 +270,13 @@ header {
     z-index: 1000;
 }
 
+/*Styling af billede*/
 .ungskab{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst5{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -263,6 +285,7 @@ header {
     width: 70%;
 }
 
+/*Får billede og tekst til at stå ved siden af hinanden*/
 .koncert6{
     display: flex;
     justify-content: space-around;
@@ -272,11 +295,13 @@ header {
     z-index: 1000;
 }
 
+/*Styling af billede*/
 .blaest_billede{
     width: 20%;
     height: 10%;
 }
 
+/*Styling af tekst*/
 .tekst6{
     color: var(--Grøn);
     font-family: Helvetica, sans-serif;
@@ -291,6 +316,7 @@ header {
         padding: 20px;
     }
 
+/*Viser label i stedet for menupunkter ved mindre skærme*/
     header label {
         display: flex;
         float: right;
@@ -298,11 +324,8 @@ header {
         margin-top: 2%;
         margin-right: 10%;
     }
-    
-    .menu-icon {
-        display: block;
-    }
 
+    /*Styling af menuer under label*/
     .container {
         display: none;
         flex-direction: column;
@@ -322,24 +345,31 @@ header {
         display: flex;
     }
 
+    /*En smule mindre logo*/
     .logo{
         width: 30%;
         height: auto;
     }
 
+    /*Styling af overskrifter*/
     h1{
-        text-align: right;
+        text-align: right; /*Overskriften placeret mod højre*/
     }
 
+    /*Styling af tekststykke*/
     p{
-        text-align: left;
+        text-align: left; /*Tekststykke placeret mod venstre*/
     }
 
+/*Dette har jeg gjort for at skabe mere lighed på siden*/
+
+/*Placerer billede og tekst under hinanden*/
     .koncert1{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .allen{
         width: 50%;
         height: auto;
@@ -347,6 +377,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst1{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -355,11 +386,13 @@ header {
         padding-right: 10%;
     }
 
+/*Placerer billede og tekst under hinanden*/
     .koncert2{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .gorgeous{
         width: 50%;
         height: auto;
@@ -367,6 +400,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst2{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -375,11 +409,13 @@ header {
         padding-right: 10%;
     }
 
+/*Placerer billede og tekst under hinanden*/
     .koncert3{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .anna{
         width: 50%;
         height: auto;
@@ -387,6 +423,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst3{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -394,11 +431,13 @@ header {
         text-align: center;
     }
 
+/*Placerer billede og tekst under hinanden*/
     .koncert4{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .andreasodbjerg_billede{
         width: 50%;
         height: auto;
@@ -406,6 +445,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst4{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -414,11 +454,13 @@ header {
         padding-right: 10%;
     }
 
+/*Placerer billede og tekst under hinanden*/
     .koncert5{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .ungskab{
         width: 50%;
         height: auto;
@@ -426,6 +468,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst5{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -434,11 +477,13 @@ header {
         padding-right: 10%;
     }
 
+/*Placerer billede og tekst under hinanden*/
     .koncert6{
         display: block;
         text-align: center;
     }
     
+/*Mindre billede*/
     .blaest_billede{
         width: 50%;
         height: auto;
@@ -446,6 +491,7 @@ header {
         margin-bottom: 5%;
     }
     
+/*Placerign/styling af teststykke*/
     .tekst6{
         color: var(--Grøn);
         font-family: Helvetica, sans-serif;
@@ -465,6 +511,7 @@ header {
         margin-right: 10%;
     }
 
+/*Tilpasser logoet*/
     .logo{
         width: 50%;
         height: auto;
@@ -476,6 +523,7 @@ main{
     min-height: 90vh;
 }
 
+/*Styling af footer med sociale mediekanaler*/
 .some{
     display: flex;
     justify-content: right;
@@ -485,7 +533,8 @@ main{
     padding-right: 2%;
     align-items: center;
     }
-    
+  
+/*Styling af sociale medie ikoner*/
     a img{
         width: 50px;
         height: auto;

@@ -8,16 +8,23 @@
     --Sort: #000000;
 }
 
+/*Styling af body*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Navigationsbar*/
+/*Det var ikke mulig for mig at en lodret menubar, uden af undermenerne lagde sig under hinanden, derfor lavede jeg i stedet dropdown 
+menuer, til hvert enkelt menupunkt. På dem måde ville jeg komme tætteste på mine mockups, samt gøre det tydeligt hvad der ligger under
+de forskellige menupunkter */
 .navcontainer{
     display: flex;
     justify-content: space-between;
 }
+
+/*Større logo på forsiden for at give fylde*/
 .logo{
     width: 70%;
     height: auto;
@@ -46,6 +53,7 @@ body::before {
     z-index: -1;
 }
 
+/*Generelt styling af header*/
 header {
     position: fixed;
     top:0;
@@ -60,24 +68,26 @@ header {
     text-transform: uppercase;
 }
 
-
+/*Burgermenu label, der ikke vises ved større skærme*/
 #menu-bar {
     display: none;
 }
 
+/*Styling burgermenu label*/
 header label {
     font-size: 10vh;
     color: var(--Rød);
     cursor: pointer;
-    display: none;
+    display: none; /*Display none, da man ikke ser dette label ved større skærme*/
 }
 
-
+/*Flex column, så undermenuerne lægger sig under hinanden*/
 .container{
     display: flex;
     flex-direction: column;
 }
 
+/*Styling af undermenuer*/
 .dropbtn {
     background-color: var(--Beige);
     color: var(--Rød);
@@ -90,12 +100,14 @@ header label {
     cursor: pointer;
   }
   
+  /*placering*/
   .dropdown {
     position: relative;
     display: inline-block;
     text-align: right;
   }
   
+  /*Styling af undermenupunkter*/
   .dropdown-content {
     display: none;
     position: absolute;
@@ -106,6 +118,7 @@ header label {
     z-index: 1;
   }
   
+  /*Styling af undermenupunkter*/
   .dropdown-content a {
     color: var(--Rød);
     padding: 12px 16px;
@@ -117,14 +130,17 @@ header label {
     display: block;
   }
   
+  /*Gør teksten gul ved hover*/
   .dropdown-content a:hover {
     color: var(--Gul);
 }
   
+/*Blocker ved hover*/
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
+  /*Gør teksten gul ved hover*/
   .dropdown:hover .dropbtn {
     color: var(--Gul);
   }
@@ -133,29 +149,15 @@ header label {
     display: none;
 }
 
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
 
-#menu-bar {
-    display: none;
-}
-
-header label {
-    font-size: 10vh;
-    color: var(--Rød);
-    cursor: pointer;
-    display: none;
-}
 
 /*Tablet størrelse*/
 @media(max-width:991px){
-
     header {
         padding: 20px;
     }
 
+/*Viser label i stedet for menupunkter ved mindre skærme*/
     header label {
         display: flex;
         float: right;
@@ -163,18 +165,16 @@ header label {
         margin-top: 2%;
         margin-right: 10%;
     }
-    
-    .menu-icon {
-        display: block;
-    }
+  
 
+    /*Styling af menuer under label*/
     .container {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: white;
+        background-color: var(--Hvid);
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -187,6 +187,7 @@ header label {
         display: flex;
     }
 
+    /*En smule mindre logo*/
     .logo{
         width: 90%;
         height: auto;
@@ -195,12 +196,14 @@ header label {
 
 /* telefonstørrelse */
 @media (max-width: 480px){
+/*Får logoet til at fylde så meget som muligt*/
 .logo{
     width: 100%;
     height: auto;
     padding-top: 50%;
 }
 
+/*Styling af undermenuer så de er tilpasset mindre skærme*/
 header label {
     display: flex;
     float: right;
@@ -210,11 +213,12 @@ header label {
 }
 }
 
-/*Sørger for at footeren bliver i fotteren*/
+/*Sørger for at footeren bliver i footeren*/
 main{
     min-height: 90vh;
 }
 
+/*Styling af footer med sociale mediekanaler*/
 .some{
 display: flex;
 justify-content: right;
@@ -225,6 +229,7 @@ padding-right: 2%;
 align-items: center;
 }
 
+/*Styling af sociale medie ikoner*/
 a img{
     width: 50px;
     height: auto;

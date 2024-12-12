@@ -8,23 +8,28 @@
     --Sort: #000000;
 }
 
+/*Styling af body*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Navigationsbar*/
+/*Det var ikke mulig for mig at en lodret menubar, uden af undermenerne lagde sig under hinanden, derfor lavede jeg i stedet dropdown 
+menuer, til hvert enkelt menupunkt. På dem måde ville jeg komme tætteste på mine mockups, samt gøre det tydeligt hvad der ligger under
+de forskellige menupunkter */
 .navcontainer{
     display: flex;
     justify-content: space-between;
 }
 
+/*Størrelse på logo*/
 .logo{
     width: 40%;
     height: auto;
     justify-content: center;
 }
-
 
 /*Gennemsigtig baggrund*/
 /*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
@@ -48,7 +53,7 @@ body::before {
     z-index: -1;
 }
 
-
+/*Generelt styling af header*/
 header {
     position: fixed;
     top:0;
@@ -63,11 +68,12 @@ header {
     text-transform: uppercase;
 }
 
-
+/*Burgermenu label, der ikke vises ved større skærme*/
 #menu-bar {
     display: none;
 }
 
+/*Styling burgermenu label*/
 header label {
     font-size: 10vh;
     color: var(--Rød);
@@ -75,12 +81,13 @@ header label {
     display: none;
 }
 
-
+/*Flex column, så undermenuerne lægger sig under hinanden*/
 .container{
     display: flex;
     flex-direction: column;
 }
 
+/*Styling af undermenuer*/
 .dropbtn {
     background-color: var(--Beige);
     color: var(--Rød);
@@ -93,12 +100,14 @@ header label {
     cursor: pointer;
   }
   
+  /*placering*/
   .dropdown {
     position: relative;
     display: inline-block;
     text-align: right;
   }
   
+    /*Styling af undermenupunkter*/
   .dropdown-content {
     display: none;
     position: absolute;
@@ -109,6 +118,7 @@ header label {
     z-index: 1;
   }
   
+    /*Styling af undermenupunkter*/
   .dropdown-content a {
     color: var(--Rød);
     padding: 12px 16px;
@@ -120,35 +130,22 @@ header label {
     display: block;
   }
   
+    /*Gør teksten gul ved hover*/
   .dropdown-content a:hover {
     color: var(--Gul);
 }
   
+/*Blocker ved hover*/
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
+/*Gør teksten gul ved hover*/
   .dropdown:hover .dropbtn {
     color: var(--Gul);
   }
 
-  #menu-bar {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-
-header label {
-    font-size: 10vh;
-    color: var(--Rød);
-    cursor: pointer;
-    display: none;
-}
-
+/*Styling af overskrifter*/
 h1{
     display: flex;
     justify-content: center;
@@ -165,6 +162,7 @@ h2{
     padding-top: 10%;
 }
 
+/*Box der gør det muligt at flex og block alt efter skærmens størrelse*/
 .box{
     display: flex;
     justify-content: center;
@@ -172,11 +170,12 @@ h2{
     color: var(--Grøn);
 }
 
+/*Placering af informationer*/
 .info{
     padding-right: 15%;
 }
 
-
+/*Placering af billeder*/
 .billeder_container{
     justify-content: center;
     display: flex;
@@ -188,6 +187,7 @@ h2{
     overflow: hidden;
 }
 
+/*Placering af tekst billede og animatioon så det drejer rundt*/
 /*ChatGPT: "Kan man ved hjælp af css få et billede til at dreje rundt?" https://chatgpt.com/share/6756e84c-f544-8009-a8e4-9c41f9e76259*/
 .tekst{
     position: absolute;
@@ -196,6 +196,7 @@ h2{
     animation: spin 20s linear infinite;
 }
 
+/*Animation der for billedet til at dreje rundt*/
 @keyframes spin{
     from {
         transform: rotate(0deg);
@@ -205,6 +206,7 @@ h2{
       }
 }
 
+/*Størrelse på billede*/
 .kort{
     width: 40%;
     height: auto;
@@ -217,6 +219,7 @@ h2{
         padding: 20px;
     }
 
+/*Viser label i stedet for menupunkter ved mindre skærme*/
     header label {
         display: flex;
         float: right;
@@ -224,11 +227,8 @@ h2{
         margin-top: 2%;
         margin-right: 10%;
     }
-    
-    .menu-icon {
-        display: block;
-    }
 
+    /*Styling af menuer under label*/
     .container {
         display: none;
         flex-direction: column;
@@ -248,16 +248,19 @@ h2{
         display: flex;
     }
 
+        /*En smule mindre logo*/
     .logo{
         width: 30%;
         height: auto;
     }
 
+    /*Display block i stedet for flex så billede og tekst ligger under hinanden i stedet for ved siden af hinanden*/
     .box{
         display: block;
         padding-top: 10%;
     }
 
+    /*Gør overskrift en smule mindre*/
     h1{
         font-size: 3vh;
         padding-top: 30%;
@@ -269,11 +272,13 @@ h2{
         text-align: center;
     }
 
+    /*Placering af billeder*/
     .billeder{
     display: block;
     justify-self: center;
     }
 
+/*Placering af billeder*/
     .billeder_container{
     justify-content: center;
     align-items: center;
@@ -289,12 +294,14 @@ h2{
 
 /* telefonstørrelse */
 @media (max-width: 480px){
+ /*Tilpasser logoet*/
     .logo{
     width: 50%;
     height: auto;
     padding-top: 30px;
     }
 
+    /*Styling af undermenuer så de er tilpasset mindre skærme*/
     header label{
     display: flex;
     float: right;
@@ -303,10 +310,12 @@ h2{
     margin-right: 10%;
     }
 
+    /*Gør at billede og tekst ligger under hinanden*/
     .box{
     display: block;
     }
 
+    /*Gør overskrift mindre*/
     h1{
     font-size: 3vh;
     padding-top: 60%;
@@ -318,6 +327,7 @@ h2{
     text-align: center;
     }
 
+    /*Tilpasser billede*/
     .billeder_container{
     justify-content: center;
     align-items: center;
@@ -335,6 +345,7 @@ main{
     min-height: 90vh;
 }
 
+/*Styling af footer med sociale mediekanaler*/
 .some{
     display: flex;
     justify-content: right;
@@ -344,7 +355,8 @@ main{
     padding-right: 2%;
     align-items: center;
     }
-    
+
+/*Styling af sociale medie ikoner*/
     a img{
         width: 50px;
         height: auto;
