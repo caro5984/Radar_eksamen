@@ -64,54 +64,6 @@ header {
     text-transform: uppercase;
 }
 
-/*
-header .navbar ul {
-    list-style: none;
-    display: block;
-}
-
-header .navbar ul li {
-    position: relative;
-    float: right;
-}
-
-
-header .navbar ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    padding: 18px;
-    color: var(--Rød);
-    display: block;
-    font-weight: 600;
-    background-color: var(--Beige);
-}
-
-header .navbar ul li a:hover {
-    color: var(--Gul);
-}
-
-header .navbar ul li ul {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    display: none;
-}
-
-header .navbar ul li ul li {
-    width: 100%;
-}
-
-header .navbar ul li ul li ul {
-    left: 200px;
-    top:0;
-}
-
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul {
-    display: block;
-}
-*/
-
 #menu-bar {
     display: none;
 }
