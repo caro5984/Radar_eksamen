@@ -19,9 +19,8 @@
     justify-content: space-between;
 }
 .logo{
-    width: 60%;
+    width: 70%;
     height: auto;
-    margin-top: 10%;
     justify-content: center;
 }
 
@@ -59,6 +58,10 @@ header {
     justify-content: space-between;
     z-index: 1000;
     text-transform: uppercase;
+}
+/*
+.navcontainer{
+    display: flex;
 }
 
 
@@ -108,6 +111,7 @@ header .navbar ul li:hover > ul {
     display: block;
 }
 
+*/
 #menu-bar {
     display: none;
 }
@@ -118,6 +122,7 @@ header label {
     cursor: pointer;
     display: none;
 }
+
 
 .container{
     display: flex;
@@ -139,6 +144,7 @@ header label {
   .dropdown {
     position: relative;
     display: inline-block;
+    text-align: right;
   }
   
   .dropdown-content {
@@ -174,51 +180,57 @@ header label {
     color: var(--Gul);
   }
 
+  #menu-bar {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
 /*Tablet størrelse*/
 @media(max-width:991px){
 
     header {
         padding: 20px;
     }
-    
+
     header label {
         display: flex;
         float: right;
+        font-size: 5vh;
+        margin-top: -2%;
+        margin-left: -10%;
     }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left:0;
-        right:0;
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: var(--Beige);
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left:0;
-    }
-
-    #menu-bar:checked ~ .navbar {
+    
+    .menu-icon {
         display: block;
+    }
+
+    .container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .container {
+        display: flex;
     }
 
     .logo{
         width: 90%;
         height: auto;
+        padding-top: 7%;
     }
 
     .some{
@@ -235,7 +247,7 @@ header label {
 .logo{
     width: 100%;
     height: auto;
-    padding-top: 30px;
+    padding-top: 20%;
 }
 
 header label {

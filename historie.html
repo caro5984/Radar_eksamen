@@ -15,36 +15,41 @@
 </head>
 <body>
     <header>
-        <div class="navcontainer">
+        <nav class="navcontainer">
+            <div class="logo">
             <a href="index.html"><img src="images/logo_færdig.png" alt="logo" class="logo"></a>
+            </div>
     
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
     
-            <nav class="navbar">
-                <ul>
-                    <li><a href="kontaktinformation.html">Kontaktinformationer</a></li>
-                    <li><a href="#">Anmeldelser</a>
-                    <ul>
-                        <li><a href="anmeldelser.html">Historier og oplevelser fra kunstere</a></li>
-                    </li>
-                    </ul>
-                    <li><a href="#">Om Radar</a>
-                        <ul>
-                            <li><a href="#">Åbningstider</a></li>
-                            <li><a href="#">Frivilligt arbejde</a></li>
-                            <li><a href="historie.html">Radars historie</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="arrangementer.html">Arrangementer</a>
-                        <ul>
-                            <li><a href="#">Baren</a></li>
-                            <li><a href="#">Priser</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            <div class="container" style="float: right;">
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Kontaktinformation</button>
+                </div>
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Anmeldelser</button>
+                    <div class="dropdown-content">
+                    <a href="#">Historier og oplevelser fra kunstere</a>
+                    </div>
+                </div>
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Om Radar</button>
+                    <div class="dropdown-content">
+                    <a href="#">Åbningstider</a>
+                    <a href="#">Frivilligt arbejde</a>
+                    <a href="#">Radars historie</a>
+                    </div>
+                </div>
+                <div class="dropdown" style="float:right;">
+                    <button class="dropbtn">Arrangementer</button>
+                    <div class="dropdown-content">
+                    <a href="#">Baren</a>
+                    <a href="#">Priser</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="container">

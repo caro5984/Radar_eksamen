@@ -64,7 +64,7 @@ header {
     text-transform: uppercase;
 }
 
-
+/*
 header .navbar ul {
     list-style: none;
     display: block;
@@ -110,9 +110,83 @@ header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul {
     display: block;
 }
+*/
 
 #menu-bar {
     display: none;
+}
+
+header label {
+    font-size: 10vh;
+    color: var(--Rød);
+    cursor: pointer;
+    display: none;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropbtn {
+    background-color: var(--Beige);
+    color: var(--Rød);
+    padding: 16px;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--Beige);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: var(--Rød);
+    padding: 12px 16px;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    color: var(--Gul);
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: var(--Gul);
+  }
+
+  #menu-bar {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 header label {
@@ -194,46 +268,40 @@ p{
 
 /*Tablet størrelse*/
 @media(max-width:991px){
+   
     header {
         padding: 20px;
     }
-    
+
     header label {
         display: flex;
         float: right;
-        font-size: 10vh;
-        color: var(--Rød);
-        cursor: pointer;
+        font-size: 5vh;
+        margin-top: -2%;
+        margin-left: -10%;
     }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left:0;
-        right:0;
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: var(--Beige);
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left:0;
-    }
-
-    #menu-bar:checked ~ .navbar {
+    
+    .menu-icon {
         display: block;
+    }
+
+    .container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .container {
+        display: flex;
     }
 
     .logo{
