@@ -235,10 +235,19 @@ padding-left: 2%;
 
 /*Styling af billede*/
 .kunstner3{
-width: 30%;
-height: auto;
+    width: 30%;
+        height: auto;
 padding-left: 2%;
 }
+
+/*Styling af stjernerne*/
+.stjerne3{
+    display: flex;
+    justify-content:left;
+    padding-left: 23%;
+    font-size: 3vh;
+    color: var(--Rød);
+    }
 
 
 /*Tablet størrelse*/
