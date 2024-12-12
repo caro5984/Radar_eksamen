@@ -160,8 +160,8 @@ header label {
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: -2%;
-        margin-left: -10%;
+        margin-top: 2%;
+        margin-right: 10%;
     }
     
     .menu-icon {
@@ -206,15 +206,15 @@ header label {
 .logo{
     width: 100%;
     height: auto;
-    padding-top: 30px;
+    padding-top: 50%;
 }
 
 header label {
     display: flex;
     float: right;
     font-size: 5vh;
-    margin-top: -2%;
-    margin-left: -10%;
+    margin-top: 2%;
+    margin-right: 10%;
 }
 
 .some{

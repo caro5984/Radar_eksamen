@@ -334,7 +334,6 @@ h1{
     .koncert1{
         display: block;
         text-align: center;
-        width: 100%;
     }
     
     .allen{
@@ -466,8 +465,13 @@ h1{
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: 10%;
+        margin-top: 2%;
         margin-right: 10%;
+    }
+
+    .logo{
+        width: 50%;
+        height: auto;
     }
 }
 

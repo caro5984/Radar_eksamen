@@ -213,11 +213,6 @@ h2{
 
 /*Tablet størrelse*/
 @media(max-width:991px){
-
-    header {
-        padding: 20px;
-    }
-    
     header {
         padding: 20px;
     }
@@ -226,8 +221,8 @@ h2{
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: -2%;
-        margin-left: -10%;
+        margin-top: 2%;
+        margin-right: 10%;
     }
     
     .menu-icon {
@@ -312,8 +307,8 @@ h2{
     display: flex;
     float: right;
     font-size: 5vh;
-    margin-top: 10%;
-    margin-left: -10%;
+    margin-top: 2%;
+    margin-right: 10%;
     }
 
     .some{
@@ -335,7 +330,8 @@ h2{
 
     h2{
     font-size: large;
-    padding-top: 5%;
+    margin-top: 2%;
+    text-align: center;
     }
 
     .billeder_container{

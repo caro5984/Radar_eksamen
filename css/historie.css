@@ -64,6 +64,8 @@ header {
     text-transform: uppercase;
 }
 
+
+
 #menu-bar {
     display: none;
 }
@@ -220,7 +222,6 @@ p{
 
 /*Tablet størrelse*/
 @media(max-width:991px){
-   
     header {
         padding: 20px;
     }
@@ -229,8 +230,8 @@ p{
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: -2%;
-        margin-left: -10%;
+        margin-top: 2%;
+        margin-right: 10%;
     }
     
     .menu-icon {
@@ -259,6 +260,14 @@ p{
     .logo{
         width: 30%;
         height: auto;
+    }
+
+    .some{
+        color: var(--Rød);
+        display: flex;
+        padding: 2%;
+        font-size: 4vh;
+        justify-content: end;
     }
 }
 

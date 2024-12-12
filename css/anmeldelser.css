@@ -62,57 +62,7 @@ header {
     z-index: 1000;
     text-transform: uppercase;
 }
-/*
-header .navbar ul {
-    list-style: none;
-    display: block;
-}
 
-header .navbar ul li {
-    position: relative;
-    float: right;
-}
-
-
-header .navbar ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    padding: 18px;
-    color: var(--Rød);
-    display: block;
-    font-weight: 600;
-    background-color: var(--Beige);
-}
-
-header .navbar ul li a:hover {
-    color: var(--Gul);
-}
-
-header .navbar ul li ul {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    display: none;
-}
-
-header .navbar ul li ul li {
-    width: 100%;
-}
-
-header .navbar ul li ul li ul {
-    left: 200px;
-    top:0;
-}
-
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul {
-    display: block;
-}
-
-#menu-bar {
-    display: none;
-}
-*/
 
 #menu-bar {
     display: none;
@@ -190,6 +140,7 @@ header label {
     display: none;
     cursor: pointer;
 }
+
 
 header label {
     font-size: 10vh;
@@ -344,46 +295,43 @@ p{
         padding: 20px;
     }
     
+    header {
+        padding: 20px;
+    }
+
     header label {
         display: flex;
         float: right;
-        font-size: 10vh;
-        color: var(--Rød);
-        cursor: pointer;
+        font-size: 5vh;
+        margin-top: 2%;
+        margin-right: 10%;
     }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left:0;
-        right:0;
-        display: none;
-    }
-
-    header .navbar ul li {
-        width: 100%;
-    }
-
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
-    }
-
-    header .navbar ul li ul li {
-        background: var(--Beige);
-    }
-
-    header .navbar ul li ul li ul {
-        width: 100%;
-        left:0;
-    }
-
-    #menu-bar:checked ~ .navbar {
+    
+    .menu-icon {
         display: block;
     }
 
+    .container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .container {
+        display: flex;
+    }
+
     .logo{
-        width: 30%;
+        width: 40%;
         height: auto;
     }
 
@@ -465,8 +413,8 @@ p{
         display: flex;
         float: right;
         font-size: 5vh;
-        margin-top: 10%;
-        margin-left: -10%;
+        margin-top: 2%;
+        margin-right: 10%;
     }
 
     h1{
