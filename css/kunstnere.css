@@ -145,6 +145,102 @@ header label {
     color: var(--Gul);
   }
 
+/*Styling af overskrifter*/
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+    color: var(--Grøn);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--Rød);
+}
+
+/*Styling af tekst*/
+p{
+    font-family: Helvetica, sans-serif;
+    color: var(--Grøn);
+    font-weight: 600;
+    font-size: 2vh;
+    font-style: oblique;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*Placerer billede og tekst ved siden af hinanden*/
+.billede_container{
+    display: flex;
+}
+
+/*Tekst og billede ved siden af hinanden*/
+.kunstner_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: right;
+}
+
+/*Styling af billede*/
+.kunstner1{
+width: 30%;
+height: auto;
+padding-left: 2%;
+}
+
+/*Styling af stjernerne*/
+.stjerne1{
+display: flex;
+justify-content:left;
+padding-left: 23%;
+font-size: 3vh;
+color: var(--Rød);
+}
+
+/*Tekst og billede ved siden af hinanden*/
+.kunstner_2{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*Styling af billede*/
+.kunstner2{
+width: 30%;
+height: auto;
+padding-left: 2%;
+}
+
+/*Styling af stjernerne*/
+.stjerne2{
+    display: flex;
+    justify-content:left;
+    padding-left: 65%;
+    font-size: 3vh;
+    color: var(--Rød);
+    }
+
+/*Tekst og billede ved siden af hinanden*/
+.kunstner_3{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: right;
+}
+
+/*Styling af billede*/
+.kunstner3{
+width: 30%;
+height: auto;
+padding-left: 2%;
+}
+
+
 /*Tablet størrelse*/
 @media(max-width:991px){
     header {
@@ -184,6 +280,18 @@ header label {
     .logo{
         width: 30%;
         height: auto;
+    }
+
+    .kunstner_1{
+        display: block;
+    }
+
+    .kunstner_2{
+        display: block;
+    }
+
+    .kunstner_3{
+        display: block;
     }
 }
 
