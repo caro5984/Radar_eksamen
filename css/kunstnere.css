@@ -1,0 +1,230 @@
+/*Farver*/
+:root{
+    --Rød: #D52B1E;
+    --Grøn: #012E07;
+    --Gul: #FF9900;
+    --Hvid: #FFFFFF;
+    --Beige: #ECECE5;
+    --Sort: #000000;
+}
+
+/*Styling af body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navigationsbar*/
+/*Det var ikke mulig for mig at en lodret menubar, uden af undermenerne lagde sig under hinanden, derfor lavede jeg i stedet dropdown 
+menuer, til hvert enkelt menupunkt. På dem måde ville jeg komme tætteste på mine mockups, samt gøre det tydeligt hvad der ligger under
+de forskellige menupunkter */
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Størrelse på logo*/
+.logo{
+    width: 40%;
+    height: auto;
+    justify-content: center;
+}
+
+/*Gennemsigtig baggrund*/
+/*ChaGPT: "Kan jeg gøre baggrundsbilledet gennemsigtigt?" https://chatgpt.com/share/6756eeed-cec0-8009-94c3-72717e26b2d3*/
+body {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--Beige);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/forside.png') center / cover no-repeat;
+    opacity: 0.2; /* Juster gennemsigtigheden */
+    z-index: -1;
+}
+
+/*Generelt styling af header*/
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    padding: 10px 7%;
+    display: block;
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+/*Burgermenu label, der ikke vises ved større skærme*/
+#menu-bar {
+    display: none;
+}
+
+/*Styling burgermenu label*/
+header label {
+    font-size: 10vh;
+    color: var(--Rød);
+    cursor: pointer;
+    display: none;
+}
+
+/*Flex column, så undermenuerne lægger sig under hinanden*/
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Styling af undermenuer*/
+.dropbtn {
+    background-color: var(--Beige);
+    color: var(--Rød);
+    padding: 16px;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /*placering*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+  }
+  
+    /*Styling af undermenupunkter*/
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--Beige);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+    /*Styling af undermenupunkter*/
+  .dropdown-content a {
+    color: var(--Rød);
+    padding: 12px 16px;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+  }
+  
+    /*Gør teksten gul ved hover*/
+  .dropdown-content a:hover {
+    color: var(--Gul);
+}
+  
+/*Blocker ved hover*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+/*Gør teksten gul ved hover*/
+  .dropdown:hover .dropbtn {
+    color: var(--Gul);
+  }
+
+/*Tablet størrelse*/
+@media(max-width:991px){
+    header {
+        padding: 20px;
+    }
+
+/*Viser label i stedet for menupunkter ved mindre skærme*/
+    header label {
+        display: flex;
+        float: right;
+        font-size: 5vh;
+        margin-top: 2%;
+        margin-right: 10%;
+    }
+
+    /*Styling af menuer under label*/
+    .container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropbtn{
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .container {
+        display: flex;
+    }
+
+        /*En smule mindre logo*/
+    .logo{
+        width: 30%;
+        height: auto;
+    }
+}
+
+/* telefonstørrelse */
+@media (max-width: 480px){
+    /*Tilpasser logoet*/
+       .logo{
+       width: 50%;
+       height: auto;
+       padding-top: 30px;
+       }
+   
+       /*Styling af undermenuer så de er tilpasset mindre skærme*/
+       header label{
+       display: flex;
+       float: right;
+       font-size: 5vh;
+       margin-top: 2%;
+       margin-right: 10%;
+       }
+} 
+
+/*Sørger for at footeren bliver i fotteren*/
+main{
+    min-height: 90vh;
+}
+
+/*Styling af footer med sociale mediekanaler*/
+.some{
+    display: flex;
+    justify-content: right;
+    width: 15%;
+    height: auto;
+    float: right;
+    padding-right: 2%;
+    align-items: center;
+    }
+
+/*Styling af sociale medie ikoner*/
+    a img{
+        width: 50px;
+        height: auto;
+        padding: 3%;
+    }
