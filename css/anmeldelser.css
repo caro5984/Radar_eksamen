@@ -159,7 +159,6 @@ h1{
 p{
     font-size: 2vh;
     font-weight: 400;
-    padding-top: 5%;
 }
 
 .section1 {
@@ -168,6 +167,12 @@ p{
     color: var(--Grøn);
     width: 100%;
     height: auto;
+}
+
+iframe {
+    padding-top: 3%;
+    width: 100%;
+    max-width: 300px;
 }
 
 .billede1{
@@ -335,13 +340,19 @@ p{
         text-transform: uppercase;
         font-weight: 600;
         font-size: 3vh;
-        padding-top: 5%;
+        padding-top: 1%;
     }
     
     p{
         font-size: 1.5vh;
         font-weight: 400;
         padding-top: 2%;
+    }
+
+    iframe {
+        padding-top: 3%;
+        width: 100%;
+        max-width: 300px;
     }
 
     .billede1{
@@ -353,6 +364,8 @@ p{
     .tekst1{
     padding-top: 10%;
     width: 80%;
+    display: flex;
+    justify-content: center;
     }
 
     .billede2{
