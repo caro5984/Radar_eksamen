@@ -169,7 +169,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3%;
     color: var(--Grøn);
 }
 
@@ -185,6 +184,7 @@ h2{
     width: 800px;
     height: auto;
     right: 0%;
+    top: 40%;
     overflow: hidden;
 }
 
@@ -253,14 +253,6 @@ h2{
         height: auto;
     }
 
-    .some{
-        color: var(--Rød);
-        display: flex;
-        padding: 2%;
-        font-size: 4vh;
-        justify-content: end;
-    }
-
     .box{
         display: block;
         padding-top: 10%;
@@ -290,8 +282,8 @@ h2{
     width: 100%;
     height: auto;
     right: 0%;
+    top: 62%;
     overflow: hidden;
-    padding-top: 3%;
     }
 }
 
@@ -309,14 +301,6 @@ h2{
     font-size: 5vh;
     margin-top: 2%;
     margin-right: 10%;
-    }
-
-    .some{
-    color: var(--Rød);
-    display: flex;
-    padding: 2%;
-    font-size: 2vh;
-    justify-content: end;
     }
 
     .box{
@@ -342,7 +326,6 @@ h2{
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding-top: 3%;
     }
 
 }
@@ -353,9 +336,17 @@ main{
 }
 
 .some{
-    color: var(--Rød);
     display: flex;
-    padding: 2%;
-    font-size: 5vh;
-    justify-content: end;
-}
+    justify-content: right;
+    width: 15%;
+    height: auto;
+    float: right;
+    padding-right: 2%;
+    align-items: center;
+    }
+    
+    a img{
+        width: 50px;
+        height: auto;
+        padding: 3%;
+    }

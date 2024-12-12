@@ -191,14 +191,6 @@ header label {
         width: 90%;
         height: auto;
     }
-
-    .some{
-        color: var(--Rød);
-        display: flex;
-        padding: 2%;
-        font-size: 4vh;
-        justify-content: end;
-    }
 }
 
 /* telefonstørrelse */
@@ -216,14 +208,6 @@ header label {
     margin-top: 2%;
     margin-right: 10%;
 }
-
-.some{
-    color: var(--Rød);
-    display: flex;
-    padding: 2%;
-    font-size: 3vh;
-    justify-content: end;
-}
 }
 
 /*Sørger for at footeren bliver i fotteren*/
@@ -232,9 +216,18 @@ main{
 }
 
 .some{
-    color: var(--Rød);
-    display: flex;
-    font-size: 5vh;
-    justify-content: flex-end;
-    padding-bottom: 2%;
+display: flex;
+justify-content: right;
+width: 15%;
+height: auto;
+float: right;
+padding-right: 2%;
+align-items: center;
 }
+
+a img{
+    width: 50px;
+    height: auto;
+    padding: 3%;
+}
+

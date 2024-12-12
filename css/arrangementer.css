@@ -141,12 +141,16 @@ header {
         cursor: pointer;
     }
 
-header label {
-    font-size: 10vh;
-    color: var(--Rød);
-    cursor: pointer;
-    display: none;
-}
+    h1{
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
+    }
+
+    p{
+        font-weight: 400;
+    }
 
 .koncert1{
     display: flex;
@@ -169,12 +173,7 @@ header label {
     width: 70%;
 }
 
-h1{
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--Grøn);
-    font-family: Helvetica, sans-serif;
-}
+
 
 .koncert2{
     display: flex;
@@ -449,14 +448,6 @@ h1{
         text-align: center;
         padding-right: 10%;
     }
-
-    .some{
-        color: var(--Rød);
-        display: flex;
-        padding: 2%;
-        font-size: 4vh;
-        justify-content: end;
-    }
 }
 
 /* telefonstørrelse */
@@ -481,9 +472,17 @@ main{
 }
 
 .some{
-    color: var(--Rød);
     display: flex;
-    padding: 2%;
-    font-size: 5vh;
-    justify-content: end;
-}
+    justify-content: right;
+    width: 15%;
+    height: auto;
+    float: right;
+    padding-right: 2%;
+    align-items: center;
+    }
+    
+    a img{
+        width: 50px;
+        height: auto;
+        padding: 3%;
+    }
