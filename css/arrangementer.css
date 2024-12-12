@@ -149,7 +149,9 @@ header {
     }
 
     p{
-        font-weight: 400;
+        font-weight: 600;
+        color: var(--Grøn);
+        font-family: Helvetica, sans-serif;
     }
 
 .koncert1{
@@ -172,7 +174,6 @@ header {
     font-weight: 600;
     width: 70%;
 }
-
 
 
 .koncert2{
@@ -327,7 +328,11 @@ header {
     }
 
     h1{
-        text-align: center;
+        text-align: right;
+    }
+
+    p{
+        text-align: left;
     }
 
     .koncert1{
