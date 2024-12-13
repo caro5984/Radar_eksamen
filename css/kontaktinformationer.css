@@ -232,10 +232,11 @@ h2{
     .container {
         display: none;
         flex-direction: column;
+        justify-content: center;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: white;
+        background-color: var(--Beige);
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }

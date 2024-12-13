@@ -377,7 +377,7 @@ padding-left: 2%;
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: white;
+        background-color: var(--Beige);
         width: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -387,7 +387,7 @@ padding-left: 2%;
     }
 
     #menu-bar:checked ~ .container {
-        display: flex;
+        display: block;
     }
 
         /*En smule mindre logo*/
@@ -396,16 +396,46 @@ padding-left: 2%;
         height: auto;
     }
 
+    /*Flexbox, så billede og teskt ligger ved siden af hinanden*/
+    .billede_container{
+        display: flex;
+    }
+
     .kunstner_1{
         display: block;
+    }
+
+    /*Styling og placering af billeder*/
+    .kunstner1{
+        display: flex;
+        justify-content: center;
+        width: 30%; /*mindre billeder*/
+        height: 30%;
+        padding-top: 40%;
     }
 
     .kunstner_2{
         display: block;
     }
 
+    .kunstner2{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 30%;
+        padding-top: 40%;
+    }
+
     .kunstner_3{
         display: block;
+    }
+
+    .kunstner3{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 30%;
+        padding-top: 40%;
     }
 }
 
@@ -426,7 +456,157 @@ padding-left: 2%;
        margin-top: 2%;
        margin-right: 10%;
        }
+
+       h1{
+        display: flex;
+        justify-content: center;
+        padding-top: 45%;
+        text-align: center;
+       }
+
+       p{
+        width: 100%;
+        font-weight: 500;
+       }
+
+        /*Flexbox, så billede og teskt ligger ovenover hinanden*/
+    .billede_container{
+        display: block;
+    }
+
+       .kunstner_1{
+        display: block;
+        justify-content: center;
+    }
+
+    /*Styling og placering af billeder*/
+    .kunstner1{
+        display: block;
+        width: 60%; 
+        height: 60%;
+        padding: 5%;
+    }
+
+    .stjerne1{
+        padding: 2%;
+    }
+
+    .kunstner_2{
+    display: block;
+    justify-content: center;
+    padding-top: 20%;   
+}
+
+ /*Styling og placering af billeder*/
+ .kunstner2{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.stjerne2{
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+.kunstner_3{
+    display: block;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+/*Styling og placering af billeder*/
+.kunstner3{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.stjerne3{
+    padding: 2%;
+}
+
+.gaest_1{
+    display: block;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+/*Styling og placering af billeder*/
+.gaest1{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.hjerte1{
+    padding: 2%;
+}
+
+.gaest_2{
+    display: block;
+    justify-content: center;
+    padding-top: 20%;   
+}
+
+ /*Styling og placering af billeder*/
+ .gaest2{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.hjerte2{
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+.gaest_3{
+    display: block;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+/*Styling og placering af billeder*/
+.gaest3{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.hjerte3{
+    padding: 2%;
+}
+
+.gaest_4{
+    display: block;
+    justify-content: center;
+    padding-top: 20%;   
+}
+
+ /*Styling og placering af billeder*/
+ .gaest4{
+    display: block;
+    width: 60%; 
+    height: 60%;
+    padding: 5%;
+}
+
+.hjerte4{
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
 } 
+
+
 
 /*Sørger for at footeren bliver i fotteren*/
 main{
