@@ -357,37 +357,37 @@ padding-left: 2%;
 
 /*Tablet størrelse*/
 @media(max-width:991px){
-    header {
-        padding: 20px;
-    }
-
-/*Viser label i stedet for menupunkter ved mindre skærme*/
-    header label {
-        display: flex;
-        float: right;
-        font-size: 5vh;
-        margin-top: 2%;
-        margin-right: 10%;
-    }
-
-    /*Styling af menuer under label*/
-    .container {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: var(--Beige);
-        width: 100%;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+        header {
+            padding: 20px;
+        }
+    
+    /*Viser label i stedet for menupunkter ved mindre skærme*/
+        header label {
+            display: block;
+            float: right;
+            font-size: 5vh;
+            margin-top: 2%;
+            margin-right: 10%;
+        }
+    
+        /*Styling af menuer under label*/
+        .container {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: var(--Beige);
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
     .dropbtn{
         width: 100%;
     }
 
     #menu-bar:checked ~ .container {
-        display: block;
+        display: flex;
     }
 
         /*En smule mindre logo*/
@@ -403,6 +403,7 @@ padding-left: 2%;
 
     .kunstner_1{
         display: block;
+        padding-top: 8%;
     }
 
     /*Styling og placering af billeder*/
@@ -416,6 +417,7 @@ padding-left: 2%;
 
     .kunstner_2{
         display: block;
+        padding-top: 8%;
     }
 
     .kunstner2{
@@ -428,6 +430,7 @@ padding-left: 2%;
 
     .kunstner_3{
         display: block;
+        padding-top: 8%;
     }
 
     .kunstner3{
@@ -436,6 +439,59 @@ padding-left: 2%;
         width: 30%;
         height: 30%;
         padding-top: 40%;
+    }
+
+    .gaest_1{
+        display: block;
+    }
+
+    /*Styling og placering af billeder*/
+    .gaest1{
+        display: flex;
+        justify-content: center;
+        width: 30%; /*mindre billeder*/
+        height: 30%;
+        padding-top: 2%;
+    }
+
+    .gaest_2{
+        display: block;
+        padding-top: 8%;
+    }
+
+    .gaest2{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 30%;
+        padding-top: 2%;
+    }
+
+    .gaest_3{
+        display: block;
+        padding-top: 8%;
+    }
+
+    /*Styling og placering af billeder*/
+    .gaest3{
+        display: flex;
+        justify-content: center;
+        width: 30%; /*mindre billeder*/
+        height: 30%;
+        padding-top: 8%;
+    }
+
+    .gaest_4{
+        display: block;
+        padding-top: 8%;
+    }
+
+    .gaest4{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        height: 30%;
+        padding-top: 8%;
     }
 }
 
