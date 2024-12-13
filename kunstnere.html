@@ -241,6 +241,31 @@ https://chatgpt.com/share/675bf812-f390-8009-8251-23f18b0bcad9-->
             </div>
         </div>
 
+<!--W3schools: HTML Forms https://www.w3schools.com/html/html_forms.asp-->
+        <h2>Send os din oplevelse</h2>
+        <div class="send_oplevelse">
+            <form action="/action_page.php">
+                <label for="myfile">Tilføj et festligt billede</label>
+                <input type="file" id="myfile" name="myfile"><br>
+              </form>
+
+            <form action="/send-besked" method="POST">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn" name="fornavn" placeholder="Indtast dit fornavn" required>
+            
+                <label for="efternavn">Efternavn</label>
+                <input type="text" id="efternavn" name="efternavn" placeholder="Indtast dit efternavn" required>
+            
+                <label for="besked">Besked</label>
+                <textarea id="besked" name="besked" placeholder="Skriv din besked her..." rows="5" required></textarea>
+            
+                <form action="index.html"></form>
+
+                <form id="knap" action="index.html"><button type="submit">Send</button></form> 
+
+            </form>
+        </div>
+
     </main>
 
     <footer>

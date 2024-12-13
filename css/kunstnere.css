@@ -156,6 +156,16 @@ h1{
     text-decoration-color: var(--Rød);
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+    color: var(--Grøn);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--Rød);
+    padding: 2%;
+}
+
 /*Styling af tekst*/
 p{
     font-family: Helvetica, sans-serif;
@@ -353,6 +363,51 @@ padding-left: 2%;
     font-size: 3vh;
     color: var(--Rød);
     }
+
+.send_oplevelse{
+    text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--Grøn);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#knap button{
+    font-family: Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--Rød);
+    color: var(--Hvid);
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; /* Runde hjørner */
+    cursor: pointer; /* Hånd-markør ved hover */
+}
+   
+input, textarea, #knap {
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--Beige);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#knap :hover {
+    background-color: var(--Gul);
+}
 
 
 /*Tablet størrelse*/
