@@ -37,6 +37,10 @@
         <!--Containere som placerer menubaren i højreside af skærmen (style hertil fra w3schools: CSS Dropdown: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_right)-->
                 <div class="container" style="float: right;">
                     <div class="dropdown" style="float:right;">
+                                                        <!--Her er koden ikke valid, da validatoren siger dette:
+                                                         "The element button must not appear as a descendant of the a element."
+                                                         Det var ikke muligt at lave en menubar uden disse funktioner, hvor jeg kunne displaye
+                                                         menupunkterne under hinanden, derfor er der brugt button i et ahref-->
                         <a href="kontaktinformation.html"><button class="dropbtn">Kontaktinformation</button></a>
                     </div>
                     <div class="dropdown" style="float:right;">
@@ -55,6 +59,10 @@
                         </div>
                     </div>
                     <div class="dropdown" style="float:right;">
+                                                        <!--Her er koden ikke valid, da validatoren siger dette:
+                                                         "The element button must not appear as a descendant of the a element."
+                                                         Det var ikke muligt at lave en menubar uden disse funktioner, hvor jeg kunne displaye
+                                                         menupunkterne under hinanden, derfor er der brugt button i et ahref-->
                         <a href="arrangementer.html"><button class="dropbtn">Arrangementer</button></a>
                         <div class="dropdown-content">
                         <a href="#">Baren</a>
@@ -262,11 +270,14 @@ https://chatgpt.com/share/675bf812-f390-8009-8251-23f18b0bcad9-->
                 <label for="besked">Besked</label>
                 <textarea id="besked" name="besked" placeholder="Skriv din besked her..." rows="5" required></textarea>
             
+                <!--Her er koden ikke valid, da validatoren siger dette:
+                    "Saw a form start tag, but there was already an active form element. 
+                    Nested forms are not allowed. Ignoring the tag." 
+                    Hvis jeg fjerner den øverste af de to forms, ændres stylingen af sendknappen, og man ender på en 404 side. 
+                    Hvis jeg fjerner den nederste form, forsvinder knappen helt. Derfor har jeg være nødt til at beholde begge forms.-->
                 <form action="index.html"></form>
 
                 <form id="knap" action="index.html"><button type="submit">Send</button></form> 
-
-            </form>
         </div>
 
     </main>
