@@ -28,8 +28,6 @@ de forskellige menupunkter */
 .logo{
     width: 40%;
     height: auto;
-    justify-content: center;
-    z-index: -1;
 }
 
 /*Gennemsigtig baggrund*/
