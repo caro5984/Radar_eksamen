@@ -58,7 +58,7 @@
                     <a href="historie.html">Radars historie</a>
                     </div>
                 </div>
-                <diav class="dropdown" style="float:right;">
+                <div class="dropdown" style="float:right;">
                                                     <!--Her er koden ikke valid, da validatoren siger dette:
                                                     "The element button must not appear as a descendant of the a element."
                                                     Det var ikke muligt at lave en menubar uden disse funktioner, hvor jeg kunne displaye
@@ -74,12 +74,12 @@
     </header>
 
     <main>
-        <section class="indhold_container">
+<section class="indhold_container">
             <h1>Radars historie</h1>
-            <section class="container_1">
+    <section class="container_1">
                 <img src="images/synge_mand.png" alt="synge mand" class="synge_mand">
         
-        <article class="artikel_1">
+<article class="artikel_1"> <!--Her er koden ikke valid. Denne <article> vises som ikke lukket, med lukningen kommer på linje 135-->
             <div class="artikel1">
                 <p>
                     Hvis du leder efter „hvad skal man se i Aarhus”, er Radar ved Godsbanen et must. 
@@ -102,7 +102,7 @@
                     spændende på plakaten.
                 </p>
             </div>
-            </section>
+    </section> <!--Her er koden ikke valid, men dette </section> tag tilhører "container_1" (linje 79)-->
 
             <div class="container_2">
             <div class="container_3">
@@ -132,10 +132,10 @@
                     </p>
                 </div>
             </div>
-        </article>
+</article>
                 <img src="images/mand_med_trumpet.png" alt="mand med trumpet" class="mand_med_trumpet">
             </div>
-        </section>
+</section>
     </main>
     
     <footer>
